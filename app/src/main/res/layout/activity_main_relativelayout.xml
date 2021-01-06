@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<!--&lt;!&ndash; 相对布局 -相对父布局-->
+<!--    layout_alignParentLeft ：相对父布局左对齐-->
+<!--    layout_alignParentRight ：相对父布局右对齐-->
+<!--    layout_alignParentTop ：相对父布局上对齐-->
+<!--    layout_alignParentBottom ：相对父布局下对齐-->
+<!--    layout_centerInParent ：相对父布局居中对齐-->
+<!-- &ndash;&gt;-->
+<!--    <Button-->
+<!--        android:id="@+id/button1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:text="Button 1" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:text="Button 2" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:text="Button 3" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button4"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:text="Button 4" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button5"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:text="Button 5" />-->
+
+    <!-- 相对布局 -相对控件
+    layout_alignParentLeft ：相对父模块左对齐
+    layout_alignParentRight ：相对父模块右对齐
+    layout_alignParentTop ：相对父模块上对齐
+    layout_alignParentBottom ：相对父模块下对齐
+    layout_centerInParent ：相对父模块居中对齐
+ -->
+
+    <!-- 相对布局 -相对控件
+        button3相对父布局居中，然后其他控件相对button3进行排布
+        layout_above="@id/button3" : 使控件位于button3上方
+        layout_below : 使控件位于button3下方
+        layout_toRightOf : 使控件位于button3右侧
+        layout_toLeftOf : 使控件位于button3左侧
+
+        android:layout_alignLeft=""  左边缘与左边缘对齐，还有其他方向的
+    -->
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Button 3" />
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button3"
+        android:layout_toLeftOf="@id/button3"
+        android:text="Button 1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button3"
+        android:layout_toRightOf="@id/button3"
+        android:text="Button 2" />
+
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button3"
+        android:layout_toLeftOf="@id/button3"
+        android:text="Button 4" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button3"
+        android:layout_toRightOf="@id/button3"
+        android:text="Button 5" />
+
+</RelativeLayout>
