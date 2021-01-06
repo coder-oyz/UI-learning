@@ -27,14 +27,19 @@ class MainActivity : AppCompatActivity() {
         initFruits() // 初始化水果数据
         val adapter = FruitAdapter(this, R.layout.fruit_item, fruitList)
         listView.adapter = adapter
+
+        //添加点击事件
         listView.setOnItemClickListener { parent, view, position, id ->
 
         }
+
         listView.setOnItemClickListener { _, _, position, _ ->
             val fruit = fruitList[position]
             Toast.makeText(this, fruit.name, Toast.LENGTH_SHORT).show()
         }
     }
+
+    // 初始化水果数据
     //repeat(2) 表示添加两遍
     private fun initFruits() {
         repeat(2) {
