@@ -29,10 +29,10 @@ class MainActivity : AppCompatActivity() {
         listView.adapter = adapter
 
         //添加点击事件
-        listView.setOnItemClickListener { parent, view, position, id ->
+        /*listView.setOnItemClickListener { parent, view, position, id ->
 
-        }
-
+        }*/
+        //没用到的参数用下划线来替代
         listView.setOnItemClickListener { _, _, position, _ ->
             val fruit = fruitList[position]
             Toast.makeText(this, fruit.name, Toast.LENGTH_SHORT).show()
