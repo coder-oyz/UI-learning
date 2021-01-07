@@ -12,6 +12,7 @@ import java.lang.StringBuilder
 //使用recyclerView首先要在build.gradle中添加RecyclerView库的依赖
     //implementation 'androidx.recyclerview:recyclerview:1.0.0'
 //在布局中加入RecyclerView控件也是非常简单的，先为RecyclerView指定一个id，然后将宽度和高度都设置为match_parent，这样RecyclerView就占满了整个布局的空间。
+//加入点击事件在FruitAdapter里面
 class MainActivity : AppCompatActivity() {
 
     private val fruitList = ArrayList<Fruit>()
