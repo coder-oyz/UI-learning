@@ -3,6 +3,7 @@ package com.oyz.fragmenttest
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.left_fragment.*
 
 /**动态添加Fragment的步骤
@@ -38,5 +39,12 @@ class MainActivity : AppCompatActivity() {
         transaction.addToBackStack(null)
 
         transaction.commit()
+    }
+
+    //activity 中调用 fragment
+    fun testCommunication(){
+        //val fragment = supportFragmentManager.findFragmentById(R.id.leftFrag) as LeftFragment
+        //但更推荐
+        val fragment = leftFrag as LeftFragment
     }
 }
