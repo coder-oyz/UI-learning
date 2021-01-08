@@ -12,11 +12,20 @@
         android:layout_height="match_parent"
         android:layout_weight="1" />
 
-    <fragment
-        android:id="@+id/rightFrag"
-        android:name="com.oyz.fragmenttest.RightFragment"
+    <!-- 动态添加fragment -->
+    <FrameLayout
+        android:id="@+id/rightLayout"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="1" />
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+<!--    <fragment-->
+<!--        android:id="@+id/rightFrag"-->
+<!--        android:name="com.oyz.fragmenttest.RightFragment"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_weight="1" />-->
 
 </LinearLayout>
