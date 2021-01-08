@@ -33,6 +33,10 @@ class MainActivity : AppCompatActivity() {
         val fragmentManager = supportFragmentManager
         val transaction = fragmentManager.beginTransaction()
         transaction.replace(R.id.rightLayout, fragment)
+
+        //实现返回栈  这样点击back键就会返回上一个fragment了
+        transaction.addToBackStack(null)
+
         transaction.commit()
     }
 }
