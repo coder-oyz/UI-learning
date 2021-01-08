@@ -22,15 +22,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         //实现动态添加fragment
         //首先 给左边的button注册一个点击事件
+        /*
         button.setOnClickListener {
             //点击button是又会然后调用replaceFragment动态添加AnotherRightFragment
             replaceFragment(AnotherRightFragment())
         }
         //然后调用replaceFragment动态添加了RightFragment
         replaceFragment(RightFragment())
+        */
     }
 
-    private fun replaceFragment(fragment: Fragment){
+    /*private fun replaceFragment(fragment: Fragment){
         val fragmentManager = supportFragmentManager
         val transaction = fragmentManager.beginTransaction()
         transaction.replace(R.id.rightLayout, fragment)
@@ -39,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         transaction.addToBackStack(null)
 
         transaction.commit()
-    }
+    }*/
 
     //activity 中调用 fragment
     fun testCommunication(){

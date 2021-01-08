@@ -4,22 +4,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- android:name="com.oyz.fragmenttest.LeftFragment"  显示声明类名 -->
+    <!-- 测试限定符 qualifier
+    小屏的主layout-->
     <fragment
         android:id="@+id/leftFrag"
         android:name="com.oyz.fragmenttest.LeftFragment"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1" />
 
-    <!-- 动态添加fragment -->
-    <FrameLayout
-        android:id="@+id/rightLayout"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
+    <!-- android:name="com.oyz.fragmenttest.LeftFragment"  显示声明类名 -->
+<!--    <fragment-->
+<!--        android:id="@+id/leftFrag"-->
+<!--        android:name="com.oyz.fragmenttest.LeftFragment"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_weight="1" />-->
 
-    </FrameLayout>
+    <!-- 动态添加fragment -->
+<!--    <FrameLayout-->
+<!--        android:id="@+id/rightLayout"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_weight="1">-->
+
+<!--    </FrameLayout>-->
 
 <!--    <fragment-->
 <!--        android:id="@+id/rightFrag"-->
